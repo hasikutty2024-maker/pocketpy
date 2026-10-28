@@ -18,8 +18,8 @@ cmake -S . -B build -DCMAKE_BUILD_TYPE=Release -DPK_BUILD_STATIC_MAIN=ON
 cmake --build build --config Release
 ```
 
-When embedding with `add_subdirectory(pocketpy)`, set cache options **before**
-adding the subdirectory, or pass them on the CMake command line.
+"When embedding with add_subdirectory(pocketpy), set cache options before
+adding the subdirectory, or pass them on the CMake command line."
 
 | Option | Default | Effect |
 | --- | --- | --- |
@@ -37,7 +37,7 @@ adding the subdirectory, or pass them on the CMake command line.
 Select at most one library-only option. With both off, the root build creates
 the standalone `main` executable and a library.
 
-Memory allocation defaults to the C standard library. Hosts can provide a
+"Memory allocation defaults to the C standard library". Hosts can provide a
 process-wide allocator through `py_appcallbacks()` before initialization; see
 [application allocators](C-API/introduction.md#application-allocators).
 
@@ -73,8 +73,8 @@ Match the platform libraries and feature definitions in
 [CMakeLists.txt](https://github.com/pocketpy/pocketpy/blob/main/CMakeLists.txt).
 For example, Windows uses `ws2_32`; enabled thread support needs the platform
 thread library, and supported Unix dynamic loading uses `dl`.
-Optional modules also need their native sources and libraries; defining a
-module macro alone is insufficient.
+"Optional modules also need their native sources and libraries; defining a
+module macro alone is insufficient."
 
 ## Inspect the running build
 
